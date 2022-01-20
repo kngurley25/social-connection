@@ -24,8 +24,8 @@ router
 
 //   /api/users/:userId/friends/:friendId
 router
-    .route('/:id/friends/:friendId')
-    .put(addUserFriend);
+    .route('/:userId/friends/:friendId')
+    .post(addUserFriend);
 
 
 module.exports = router;
