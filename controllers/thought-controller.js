@@ -19,12 +19,11 @@ const thoughtController = {
             res.sendStatus(400);
         })
     },
-    addThought({ params, body }, res) {
-        console.log(body);
-        Thought.create(body)
+    addThought(req, res) {
+        Thought.create(req.body)
         .then(({ _id }) => {
             return User.findOneAndUpdate(
-                { _id: params.userId },
+                { _id: req.body.userId },
                 { $push: { thoughts: _id }},
                 { new: true }
             )
