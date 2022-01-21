@@ -27,7 +27,7 @@ View this walk-through on application functionality:
 ## Demo Images
 *Preview of Insomnia Demonstration*
 
-![Demo](./assets/images/insomnia.PNG)
+![Demo](./assets/images/insomnia.png)
 
 ## Questions
 Reach out to me on GitHub or contact me by email address.  
