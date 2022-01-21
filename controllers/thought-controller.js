@@ -42,13 +42,14 @@ const thoughtController = {
             { _id: params.id }, 
             body, 
             { new: true, runValidators: true })
-        .then(updatedThought => {
-            if (!updatedThought) {
+        .then(dbUserData => {
+            if (!dbUserData) {
                 res.status(404).json({ message: 'No thought found with this ID'});
                 return;
             }
+            res.json(dbUserData);
         })
-        .catch(err => res.json(err));
+        .catch(err => res.status(400).json(err));
     },
     deleteThought({ params }, res) {
         Thought.findOneAndDelete({ _id: params.id })
