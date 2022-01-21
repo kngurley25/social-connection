@@ -15,7 +15,7 @@ To use this application:
 1. View application functionality through use of Insomia
 
 View this walk-through on application functionality:  
-[Demonstration Video](https://watch.screencastify.com/v/0tEKGtWF4yFba3l9rAHm)
+[Demonstration Video](https://watch.screencastify.com/v/caQsjbexi8xZTL7cYJna)
 
 ## Technologies
 - JavaScript
